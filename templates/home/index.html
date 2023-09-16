@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} Shahin Blog {% endblock title %}
+{% block css_style_sheet %}
+<link rel="stylesheet" href="{% static 'css/home/index.css' %}" />
+{% endblock css_style_sheet %}
+{% block content %}
+    <div class="main-content">
+        <div class="title">
+            <img src="{% static 'images/shahin.jpg' %}" alt="shahin sharbaf" srcset="">
+            <div>
+                <h1>Shahin Sharbaf 's</h1>
+                <h1>Blog</h1>
+            </div>
+        </div>
+        <h3>Hi, I am Shahin and I love to blog about tech and the world!</h3>
+        <div class="card">
+            <h1>My Latest Thoughts</h1>
+        </div>
+    </div>
+{% endblock content %}
