@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+}
+.posts {
+  display: flex;
+}
+.posts .post {
+  /* width: 33%; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px #bcbcbc;
+}
+.posts .post:hover {
+  background-color: #a050eb;
+  cursor: pointer;
+}
+.posts .post img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.posts .post > p {
+  text-align: center;
+}

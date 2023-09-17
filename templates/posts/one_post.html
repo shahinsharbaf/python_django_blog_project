@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} {{post}} {% endblock title %}
+{% block css_style_sheet %}
+<link rel="stylesheet" href="{% static 'css/posts/one_post_style.css' %}" />
+{% endblock css_style_sheet %}
+{% block content %}
+<div class="container">
+    <div class="hero-title">
+        <h1>{{post.title}}</h1>
+        <div>
+            <img src="{{post.image.url}}" />
+            <p>By Shahin</p>
+        </div>
+    </div>
+    <div class="post-description">
+        {{post.description}}
+    </div>
+</div>
+{% endblock content %}

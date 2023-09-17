@@ -6,3 +6,13 @@
   align-items: center;
   border-radius: 5px 5px 0 0;
 }
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #ae94c7;
+}
+.container {
+  background-color: rgb(219, 219, 219);
+}
