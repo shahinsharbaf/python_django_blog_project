@@ -12,6 +12,6 @@ def index(request):
 
 def posts_by_title(request,url_post):
     for post in Posts.objects.all():
-        if str(post)==str(post):
+        if str(post)==str(url_post):
             return render(request,'posts/one_post.html',context={'post':post})
     return HttpResponse('not found')
