@@ -4,7 +4,7 @@
 {% endblock css_style_sheet %}
 <div class="posts">
 {% for post in posts %}
-<a href="/posts/{{post.title}}">
+<a href="/posts/{{post.slug}}">
 <div class="post">
     <img src="{{post.image.url}}" />
     <p>{{post.title}}</p>
